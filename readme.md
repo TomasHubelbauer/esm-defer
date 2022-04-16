@@ -14,9 +14,6 @@ Use `--experimental-network-imports` with Node for HTTP(S) ESM URL support:
 
 https://nodejs.org/api/esm.html#https-and-http-imports
 
-Use `echo 'export NODE_OPTIONS=--experimental-network-imports' >> ~/.zshenv` to
-make this CLI option permanent.
-
 ```javascript
 import defer from 'https://tomashubelbauer.github.io/esm-defer/index.js';
 
