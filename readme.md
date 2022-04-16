@@ -10,28 +10,12 @@ this implementation.
 
 ## Installation & Usage
 
-### Browser
+Use `--experimental-network-imports` with Node for HTTP(S) ESM URL support:
+
+https://nodejs.org/api/esm.html#https-and-http-imports
 
 ```javascript
-import delay from 'https://github.com/tomashubelbauer/esm-defer/index.js';
-
-const deferrer = defer();
-
-await deferrer.promise;
-
-// elsewhere
-deferred.resolve();
-deferred.reject();
-```
-
-### Node
-
-```bash
-git submodule add https://github.com/tomashubelbauer/esm-delay vendor/esm-delay
-```
-
-```javascript
-import delay from './vendor/esm-delay/index.js';
+import defer from 'https://tomashubelbauer.github.io/esm-defer/index.js';
 
 const deferrer = defer();
 
